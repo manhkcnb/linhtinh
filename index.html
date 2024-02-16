@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HEHEHE</title>
 </head>
+
 <body>
-    <h1>hello</h1>
+    <style>
+        .main {
+            display: block;
+            background: url('https://wall.vn/wp-content/uploads/2019/11/hinh-anh-canh-dong-hoa-5.jpg') center/cover no-repeat;
+            height: 100vh;
+            /* Chiều cao bằng 100% chiều cao của viewport, tức là full màn hình */
+            display: block;
+
+        }
+
+        .img img {
+            max-width: 200px;
+            max-height: 300px;
+            margin: auto;
+            justify-content: center;
+            animation: zoom 4s infinite alternate;
+        }
+
+        .img {
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        @keyframes zoom {
+            0% {
+                transform: scale(1.3);
+            }
+
+            50% {
+                transform: scale(2);
+            }
+
+            100% {
+                transform: scale(1.3);
+            }
+        }
+
+        .text {
+            text-align: center;
+            font-style: italic;
+            color: #16bdf0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+        }
+        #bt1, #bt2 {
+            color: red;
+            background-color: rgb(9, 219, 226);
+            border: 10px solid rgb(9, 219, 226);
+            border-radius: 10px;
+            margin-left: 10px;
+            height: 40px;
+            width: 70px;
+        }
+    </style>
+    <div class="main">
+        <div class="img">
+            <img src="https://scontent.fhan15-2.fna.fbcdn.net/v/t39.30808-6/417577438_1667702277097046_2567680371766451757_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeF2xqISm-a0SLEggTMtnFQ5iHCTZqs3MgGIcJNmqzcyATAMhhi7pVunQ6Pp0oSVKp52NGZDdhjOCiR64dNPKq80&_nc_ohc=du5_KvBy7GkAX_-jQ-D&_nc_ht=scontent.fhan15-2.fna&oh=00_AfBJT_fYjaGQzcJIPnpHw7qT30Dp-d4UqYHHorZONv0MTw&oe=65D3D153"
+                alt="">
+        </div>
+        <div class="content">
+            <h1 class="text">alooo</h1>
+        </div>
+        <div class="button">
+            <button id="bt1">Có</button>
+            <button id="bt2">Không</button>
+        </div>
+    </div>
 </body>
+
 </html>
